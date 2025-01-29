@@ -29,9 +29,9 @@ int main(){
 	cout << "Movie Name: ........... " << name << endl;
 	cout << "Number of tickets sold: ..........." << ticketsSold << endl;
  	printf("Gross Amount: ........... $ %.2f", grossAmount);
-    printf("\nPercentage of Gross Amount Donated: %.2f %", percentage);
-    printf("\nAmount Donated: ........... $ %.2f", donated);
-    printf("\nNet Sale: ........... $ %.2f", netSale);
+    	printf("\nPercentage of Gross Amount Donated: %.2f %", percentage);
+    	printf("\nAmount Donated: ........... $ %.2f", donated);
+    	printf("\nNet Sale: ........... $ %.2f", netSale);
 
 	return 0;
 }
