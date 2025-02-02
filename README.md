@@ -14,11 +14,14 @@ This repository contains my Object-Oriented Programming (OOP) Lab assignments as
 
 ## How to Run
 
-# Navigate to the Lab 1 directory
-cd OOP-Lab/Lab\ 1
+1. Clone the repository:  
+   `git clone https://github.com/adeenasif/OOP-Lab/tree/main/Lab%201`
+   
+3. Navigate to the repository folder:  
+   `cd OOP-Lab-1`  
 
-# Compile the program using a C++ compiler
-g++ Q1.cpp -o Q1output
+4. Compile any C++ file using a C++ compiler (e.g., g++):  
+   `g++ Q1.cpp -o Q1`  
 
-# Run the executable
-./Q1output
+5. Run the compiled executable:  
+   `./Q1`  
