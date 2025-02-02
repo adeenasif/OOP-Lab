@@ -14,13 +14,11 @@ This repository contains my Object-Oriented Programming (OOP) Lab assignments as
 
 ## How to Run
 
-Navigate to the Lab 1 directory:
-  cd OOP-Lab/Lab\ 1
+# Navigate to the Lab 1 directory
+cd OOP-Lab/Lab\ 1
 
-Compile the program using a C++ compiler:
-
+# Compile the program using a C++ compiler
 g++ Q1.cpp -o Q1output
 
-Run the executable:
-
+# Run the executable
 ./Q1output
