@@ -25,3 +25,7 @@ This repository contains my Object-Oriented Programming (OOP) Lab assignments as
 
 5. Run the compiled executable:  
    `./Q1`  
+
+## Prerequisites
+C++ Compiler (e.g., GCC, Clang)
+Basic understanding of C++ programming
