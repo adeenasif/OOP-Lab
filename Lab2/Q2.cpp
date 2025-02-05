@@ -20,6 +20,7 @@ int main(int argc, char* argv[]){
 		array[i] = stoi(argv[i+1]);
 	}
 	
+	//assuming 1st element is to be to added to each element in the array
 	int addValue = array[0];
 	
 	void* returnArray = add(static_cast<void*>(array), static_cast<void*>(&size), static_cast<void*>(&addValue));
