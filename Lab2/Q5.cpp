@@ -56,7 +56,7 @@ int main(int argc, char* argv[]) {
     }
     
     sortByID(People);
-    cout << "Sorted by ID:" << endl;
+    cout << "\nSorted by ID:" << endl;
     for (const auto& details : People) {
         cout << "ID: " << details.id << ", Name: " << details.name << endl;
     }
@@ -64,9 +64,8 @@ int main(int argc, char* argv[]) {
     sortByName(People);
     cout << "\nSorted By First Character of The Name:" << endl;
     for (const auto& details : People) {
-        cout << "ID: " << details.id << ", Name: " << details.name << endl;
+        cout << "Name: " << details.name << ", ID: " << details.id << endl;
     }
 
     return 0;
 }
-
