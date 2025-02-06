@@ -4,41 +4,44 @@ using namespace std;
 
 int main(int argc, char* argv[]){
     
-	int* Array = new int[5];
-    if (argc <= 6){
-    	int Size = argc - 1;
+	int* array = new int[5];
+	
+    if (argc < 7){
+    	int size = argc - 1;
     	cout << "Without Resizing Array: " << endl;
-    	for (int i= 0; i < Size; i++){
-    		Array[i] = stoi(argv[i+1]);
+    	for (int i = 0; i < size; i++){
+    		array[i] = stoi(argv[i+1]);
 		}
-		for (int i= 0; i < Size; i++){
-    		cout << Array[i] << " ";
+		for (int i = 0; i < size; i++){
+    		cout << array[i] << " ";
 		}
 		cout << endl;
 	
-	}else{
-		int Size = argc - 1;
+	} else {
+		int size = argc - 1;
 		int* NewArray = new int[10];
-		memcpy(NewArray, Array, 5 * sizeof(int));
-		delete[] Array; 
-		Array = NewArray;
+		memcpy(NewArray, array, 5 * sizeof(int));
 		
-		for (int i = 0; i < Size; i++){
+		delete[] array; 
+		array = NewArray;
+		
+		for (int i = 0; i < size; i++){
     		NewArray[i] = stoi(argv[i+1]);
 		}
 		
-		int* FinalNew = new int[Size];
-		memcpy(FinalNew, NewArray, (Size) * sizeof(int));
-		delete[] Array;
-		Array = FinalNew;
+		int* FinalNew = new int[size];
+		memcpy(FinalNew, NewArray, (size) * sizeof(int));
+		
+		delete[] array;
+		array = FinalNew;
+		
 		cout << "Resized array: " << endl;
-		for (int i = 0; i < Size; i++){
-    		cout << Array[i] << " ";
+		for (int i = 0; i < size; i++){
+    		cout << array[i] << " ";
 		}
 		cout << "\n";
 	}
 	
-	delete[] Array;
+	delete[] array;
 	return 0;
 }
-
