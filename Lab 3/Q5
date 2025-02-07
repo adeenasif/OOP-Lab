@@ -1,0 +1,45 @@
+#include<iostream>
+
+using namespace std;
+
+class Book{
+	private:
+		string name;
+		int ISBN;
+		string authorName;
+		string publisher;
+	
+	public: 
+		void setName(string Name){
+			this->name = name;
+		}
+		string getName(){
+			return name;
+		}
+		
+		void setISBN(int isbn){
+			this->ISBN = ISBN;
+		}
+		string getISBN(){
+			return ISBN;
+		}
+		
+		void setAuthor(string Author){
+			this->author = author;
+		}
+		string getAuthor(){
+			return author;
+		}
+		
+		void setPublisher(string Publisher){
+			this->publisher = publisher;
+		}
+		int getPublisher(){
+			return publisher;
+		}
+		
+};
+
+int main(){
+	
+}
