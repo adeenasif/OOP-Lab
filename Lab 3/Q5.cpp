@@ -20,7 +20,10 @@ class Book{
 		void setISBN(int ISBN){
 			this->ISBN = ISBN;
 		}
-		
+		int getISBN (){
+			return ISBN;
+		}
+
 		void setAuthor(string authorName){
 			this->authorName = authorName;
 		}
