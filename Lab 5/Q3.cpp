@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <string>
 using namespace std;
 
 class Book {
@@ -84,11 +83,11 @@ public:
 };
 
 int main() {
-    Book book1("1984", "George Orwell", "123456789");
-    Book book2("Brave New World", "Aldous Huxley", "987654321");
-    Book book3("To Kill a Mockingbird", "Harper Lee", "112233445");
+    Book book1("Hobbit", "J.R.R. Tolkien", "123456789");
+    Book book2("Harry Potter and the goblet of fire", "J.K Rowling", "567856785");
+    Book book3("To Kill a Mockingbird", "Harper Lee", "121212121");
 
-    Library library("Central Library", "123 Library St.");
+    Library library("Mary Library", "Main Library");
 
     library.addBook(&book1);
     library.addBook(&book2);
@@ -97,7 +96,7 @@ int main() {
     library.showLibraryInfo();
     library.displayAllBooks();
 
-    string searchIsbn = "987654321";
+    string searchIsbn = "567856785";
     Book* foundBook = library.findBookInCatalog(searchIsbn);
     if (foundBook) {
         cout << "Found Book: ";
