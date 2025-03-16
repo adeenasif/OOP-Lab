@@ -51,7 +51,7 @@ class VideoFile : public VisualMedia, public AudioMedia{
 	public:
 		VideoFile(string f,int s, int w, int h, int r) : MediaFile(f, s), VisualMedia(f, s, w, h), AudioMedia(f, s, r) { }
 		
-		void play() override{   // This function overrides the Parent Class Play function by adding additional features.
+		void play() override{   
             cout << "Playing video file: " << filePath << endl;
             displayRes();
             displayRate();
