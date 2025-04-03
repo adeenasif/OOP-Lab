@@ -51,7 +51,7 @@ public:
 
 class Euro : public Currency {
 public:
-    Euro(double a, int code, double r) : Currency(a, code, '�', r) {}
+    Euro(double a, int code, double r) : Currency(a, code, '€', r) {}
 
     void convertToBase() override {
         amount = amount * rate;
@@ -67,7 +67,7 @@ public:
 
 class Rupee : public Currency {
 public:
-    Rupee(double a, int code, double r) : Currency(a, code, '*', r) {}
+    Rupee(double a, int code, double r) : Currency(a, code, '₹', r) {}
 
     void convertToBase() override {
         amount = amount * rate;
