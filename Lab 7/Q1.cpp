@@ -1,7 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<cmath>
-#include<iomanip>
+#include<iomanip>  // to set precision of double values
 using namespace std;
 
 class Account {
